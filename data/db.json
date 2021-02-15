@@ -4,13 +4,19 @@
       "id": 1,
       "title": "Create new Landing Page",
       "details": "create a new landing page with the required specs in the document.",
-      "complete": false
+      "complete": true
     },
     {
       "id": 2,
       "title": "Create HTML 5 email",
       "details": "I would like you to create a responsive HTML 5 email.",
-      "completed": false
+      "complete": false
+    },
+    {
+      "id": 3,
+      "title": "Please Fix links",
+      "details": "Please fix the links on the landing page.",
+      "complete": false
     }
   ]
 }
