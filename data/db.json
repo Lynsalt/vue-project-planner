@@ -1,0 +1,16 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Create new Landing Page",
+      "details": "create a new landing page with the required specs in the document.",
+      "complete": false
+    },
+    {
+      "id": 2,
+      "title": "Create HTML 5 email",
+      "details": "I would like you to create a responsive HTML 5 email.",
+      "completed": false
+    }
+  ]
+}
