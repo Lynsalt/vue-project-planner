@@ -66,7 +66,7 @@ export default {
       cursor: pointer;
   }
   h3:hover{
-    color:green;
+    color:#00ce89;
   }
   .actions{
       display:flex;

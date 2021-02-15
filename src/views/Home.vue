@@ -1,4 +1,5 @@
 <template>
+ 
   <div class="container">
    <div v-if="projects.length">
       <div v-for="project in projects" :key="project.id">
