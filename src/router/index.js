@@ -15,7 +15,7 @@ const routes = [
     component: AddProject
   },
  {
-   path:'/edit',
+   path:'/projects/:id',
    name: 'EditProject',
    component: EditProject
  }
