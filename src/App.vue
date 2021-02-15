@@ -18,5 +18,9 @@ body{
   color: #555;
 }
 
+.container{
+  max-width:600px;
+  margin:0px auto;
+}
 
 </style>
