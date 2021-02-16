@@ -1,16 +1,23 @@
 <template>
     <div class="container">
-    <form @submit.prevent="handleSubmit">
-      <label>Title:</label>
-      <input type="text" required v-model="title">
-      <label>Details:</label>
-      <textarea required  v-model="details"></textarea>
-      <button>Add Project</button>
-    </form>
+        <div id="main">
+            <form @submit.prevent="handleSubmit">
+            <label>Title:</label>
+            <input type="text" required v-model="title">
+            <label>Details:</label>
+            <textarea required  v-model="details"></textarea>
+            <button>Add Project</button>
+            </form>
+        </div>
     </div>
+    <Footer/>
 </template>
 <script>
+import Footer from '../components/Footer.vue'
 export default {
+    components:{
+        Footer
+    },
     data(){
         return{
           title:'',

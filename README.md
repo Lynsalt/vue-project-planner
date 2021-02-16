@@ -2,12 +2,12 @@
 
 ## Project setup
 ```
-npm install
+npm install to install dependencies 
 ```
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run serve to start the project after which, you type the command 'json-server --watch data/db.json' to start the server. 
 ```
 
 ### Compiles and minifies for production

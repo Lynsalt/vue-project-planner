@@ -6,16 +6,10 @@
 
 <script>
 name: 'Footer'
-export default {
-
-}
 </script>
 
-<style>
-   footer{    
-       padding:1em 0;
-       background-color:#444;
-   }
+<style scoped>
+  
    .copyright, a{
        text-align:center;
        color:antiquewhite;

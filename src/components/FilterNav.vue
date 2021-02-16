@@ -1,18 +1,18 @@
 <template>
-    <nav class="filter-nav">
-        <button 
-        @click="updateFilter('all')"
-        :class="{active: current === 'all' }"
-        >View All</button>
-        <button 
-        @click="updateFilter('completed')"
-        :class="{active: current === 'completed'}"
-        >Completed</button>
-        <button 
-        @click="updateFilter('inprogress')"
-        :class="{active : current === 'inprogress'}"
-        >In Progress</button>
-    </nav>
+        <nav class="filter-nav">
+            <button 
+            @click="updateFilter('all')"
+            :class="{active: current === 'all' }"
+            >View All</button>
+            <button 
+            @click="updateFilter('completed')"
+            :class="{active: current === 'completed'}"
+            >Completed</button>
+            <button 
+            @click="updateFilter('inprogress')"
+            :class="{active : current === 'inprogress'}"
+            >In Progress</button>
+        </nav>
 </template>
 
 <script>
@@ -33,6 +33,9 @@ export default {
 </script>
 
 <style>
+.container{
+  min-height:100%;
+}
    .filter-nav button{
        background: none;
        border: none;

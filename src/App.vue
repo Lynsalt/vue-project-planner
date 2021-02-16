@@ -21,10 +21,19 @@ export default {
 }
 </script>
 <style>
-body{
-  background:#f2f2f2;
+*{
   margin:0;
   padding:0;
+}
+html,body{
+  height:100%;
+}
+body{
+  background:#f2f2f2;
+}
+#main{
+  overflow:auto;
+  padding-bottom:100px;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -38,6 +47,7 @@ body{
 .container{
   max-width:600px;
   margin:0px auto;
+
 }
 .container-fluid{
    width: 100%;
@@ -47,4 +57,11 @@ body{
    box-sizing:border-box;
    background:#333;
 }
+ footer{  
+       position:relative;
+       height:50px;
+       margin-top: 400px;
+       clear:both;       
+       background-color:#444;
+   }
 </style>

@@ -1,22 +1,26 @@
 <template>
  
   <div class="container">
-    <FilterNav @filterChange="current = $event" :current="current"/>
-   <div v-if="projects.length">
-      <div v-for="project in filteredProjects" :key="project.id">
-        <Singleproject :project="project" @delete="handleDelete" @complete="handleComplete"/>
+   <div id="main">
+      <FilterNav class="filterNav" @filterChange="current = $event" :current="current"/>
+      <div v-if="projects.length">
+          <div v-for="project in filteredProjects" :key="project.id">
+            <Singleproject :project="project" @delete="handleDelete" @complete="handleComplete"/>
+          </div>
       </div>
-   </div>
+      </div>
   </div>
+  <Footer/>
 </template>
-ddf
+
 <script>
 // @ is an alias to /src
 import Singleproject from '../components/Singleproject'
 import FilterNav from '../components/FilterNav'
+import Footer from '../components/Footer'
 export default {
   name: 'Home',
-  components: {Singleproject,FilterNav},
+  components: {Singleproject,FilterNav,Footer},
   data(){
     return{
       projects: [],
@@ -59,4 +63,11 @@ export default {
 </script>
 <style scoped>
 
+.container{
+  min-height: 450px;
+
+}
+.filterNav{
+   text-align:center;
+}
 </style>
