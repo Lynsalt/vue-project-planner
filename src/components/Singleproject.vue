@@ -12,6 +12,7 @@
            <p>{{project.details}}</p>
        </div>
     </div>
+
 </template>
 <script>
 export default {

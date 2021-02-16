@@ -3,13 +3,13 @@
   <div class="container">
     <FilterNav @filterChange="current = $event" :current="current"/>
    <div v-if="projects.length">
-      <div v-for="project in projects" :key="project.id">
+      <div v-for="project in filteredProjects" :key="project.id">
         <Singleproject :project="project" @delete="handleDelete" @complete="handleComplete"/>
       </div>
    </div>
   </div>
 </template>
-
+ddf
 <script>
 // @ is an alias to /src
 import Singleproject from '../components/Singleproject'
@@ -41,6 +41,18 @@ export default {
       })
       pro.complete = !pro.complete
     }
+  },
+  computed:{
+      filteredProjects(){
+          if(this.current === 'completed'){
+            return this.projects.filter(project => project.complete)
+          }
+
+          if(this.current === 'inprogress'){
+            return this.projects.filter(project => !project.complete)
+          }
+          return this.projects
+      }
   }
 
 }
