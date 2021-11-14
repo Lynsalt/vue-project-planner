@@ -3,6 +3,7 @@
 ## Project setup
 ```
 npm install to install dependencies 
+install json-server globally - Windows: npm install -g json-server Mac/Linux: sudo npm install -g json-server
 ```
 
 ### Compiles and hot-reloads for development
